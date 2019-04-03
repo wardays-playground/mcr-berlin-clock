@@ -1,0 +1,31 @@
+<div class="container-fluid mt-5">
+    
+    <div class="size margin text-center">
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Time</span>
+            </div>
+            <input type="time" #myInput (keydown)="onKeydown($event, myInput.value)" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <button class="btn mt-3 bg-info text-light" (click)="calculateTime(myInput.value)">Translate</button>
+    </div>
+
+    <div class="clock-size margin mt-5">
+        <div [innerHTML]="row0" class="row layout">
+            <!-- Aqui van las row 0 -->
+        </div>
+        <div [innerHTML]="row1" class="row layout">
+            <!-- Aqui van las row 1 -->
+        </div>
+        <div [innerHTML]="row2" class="row layout">
+            <!-- Aqui van las row 2 -->
+        </div>
+        <div [innerHTML]="row3" class="row layout">
+            <!-- Aqui van las row 3 -->
+        </div>
+        <div [innerHTML]="row4" class="row layout">
+            <!-- Aqui van las row 4 -->
+       </div>
+    </div>
+
+</div>
